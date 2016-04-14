@@ -7,6 +7,7 @@ var app = express();
 
 app.use('/controllers', express.static(process.cwd() + '/app/controllers'));
 app.use('/public', express.static(process.cwd() + '/public'));
+app.use('/common', express.static(process.cwd() + '/app/common'));
 
 routes(app);
 
